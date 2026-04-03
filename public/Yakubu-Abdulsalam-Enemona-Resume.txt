@@ -1,0 +1,67 @@
+YAKUBU ABDULSALAM ENEMONA
+Software Developer
+Lagos State, Nigeria
+Phone: 08125229560
+Email: yakubuabdulsalam24434@gmail.com
+
+PROFESSIONAL SUMMARY
+Passionate and self-driven Software Developer with strong experience in building modern web applications, dynamic user interfaces, and graphic design assets. Skilled in frontend development, backend development, and visual design, with a focus on performance, user experience, and scalable solutions. Currently building innovative platforms and exploring advanced UI/UX animations and real-world business solutions.
+
+SKILLS
+Frontend
+- HTML5
+- CSS
+- JavaScript
+- React.js
+- Tailwind CSS
+- GSAP
+- Framer Motion
+
+Backend
+- Node.js
+- Express.js
+- Python
+- Supabase
+- Firebase
+
+Database
+- MongoDB
+- MySQL
+
+Tools and Other Skills
+- Git and GitHub
+- REST APIs
+- Responsive Design
+- UI/UX Design
+- Figma
+
+WORK EXPERIENCE
+Freelance Software Developer
+Self-employed / Remote
+2025 - Present
+- Built and deployed responsive websites for clients across different industries.
+- Developed a marketplace platform with user authentication and product management.
+- Designed modern UI with smooth animations to improve user engagement.
+- Helped small businesses establish an online presence.
+- Optimized website performance and loading speed.
+
+PROJECTS
+Valvora Marketplace
+- Built a full marketplace platform for buying and selling products.
+- Tools: React, Node.js, MongoDB
+- Result: Functional platform with user authentication, product listing, and dashboard.
+
+AbduTech 3D Portfolio
+- Designed a futuristic portfolio website with advanced animations.
+- Tools: HTML, CSS, JavaScript, Three.js, GSAP
+- Result: High-end personal brand website showcasing projects and skills.
+
+Logistics Website
+- Created a logistics service platform with a modern UI.
+- Tools: React, Tailwind CSS
+- Result: Clean and professional interface for service presentation.
+
+EDUCATION
+Aptech
+ADSE Advanced Diploma of Software Engineering
+2024 - 2026

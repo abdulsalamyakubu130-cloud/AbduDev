@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yakubu Abdulsalam Enemona | Resume</title>
+    <style>
+      :root {
+        --ink: #0f172a;
+        --muted: #5b6678;
+        --line: #d9e2f1;
+        --line-strong: #b8c7e4;
+        --accent: #173c8c;
+        --accent-soft: #eef4ff;
+        --accent-dark: #07101f;
+        --paper: #ffffff;
+        --bg: #edf2f9;
+        --shadow: 0 28px 70px rgba(15, 23, 42, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--bg);
+      }
+
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, rgba(23, 60, 140, 0.16), transparent 28%),
+          linear-gradient(180deg, #f6f9ff 0%, var(--bg) 100%);
+      }
+
+      .sheet {
+        width: min(1040px, 100%);
+        margin: 0 auto;
+        border: 1px solid rgba(184, 199, 228, 0.8);
+        border-radius: 32px;
+        overflow: hidden;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .hero {
+        display: grid;
+        gap: 24px;
+        padding: 42px;
+        background:
+          radial-gradient(circle at top right, rgba(96, 141, 255, 0.22), transparent 28%),
+          linear-gradient(135deg, #07101f 0%, #0f2148 58%, #173c8c 100%);
+        color: #ffffff;
+      }
+
+      .hero__eyebrow {
+        margin: 0;
+        font-size: 0.84rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(226, 235, 255, 0.84);
+      }
+
+      .hero__title {
+        margin: 0;
+        font-size: clamp(2.3rem, 6vw, 4rem);
+        line-height: 0.96;
+        letter-spacing: -0.05em;
+      }
+
+      .hero__role {
+        margin: 0;
+        color: #dce8ff;
+        font-size: 1.08rem;
+        font-weight: 700;
+      }
+
+      .hero__summary {
+        max-width: 46rem;
+        margin: 0;
+        color: rgba(236, 242, 255, 0.88);
+        line-height: 1.78;
+      }
+
+      .hero__meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero__pill {
+        padding: 11px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        color: #eef4ff;
+        font-size: 0.95rem;
+      }
+
+      .resume-grid {
+        display: grid;
+        gap: 0;
+      }
+
+      .sidebar {
+        display: grid;
+        gap: 22px;
+        padding: 34px 28px 40px;
+        background: linear-gradient(180deg, #f8fbff 0%, #f1f6ff 100%);
+        border-right: 1px solid var(--line);
+      }
+
+      .content {
+        display: grid;
+        gap: 24px;
+        padding: 34px 30px 40px;
+      }
+
+      .block {
+        display: grid;
+        gap: 14px;
+      }
+
+      .label {
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--line);
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .card {
+        display: grid;
+        gap: 10px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: #ffffff;
+      }
+
+      .card strong,
+      .entry strong {
+        font-size: 1rem;
+      }
+
+      .entry {
+        display: grid;
+        gap: 10px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 251, 255, 0.98));
+      }
+
+      .meta {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .text {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.72;
+      }
+
+      .stack {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.72;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+        line-height: 1.72;
+      }
+
+      .skills-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .skills-list .card {
+        background: rgba(255, 255, 255, 0.82);
+      }
+
+      .projects {
+        display: grid;
+        gap: 14px;
+      }
+
+      .note {
+        margin: 0;
+        padding: 16px 18px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--accent-soft);
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .footer {
+        margin: 0;
+        padding: 0 30px 32px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (min-width: 860px) {
+        .resume-grid {
+          grid-template-columns: 320px minmax(0, 1fr);
+        }
+      }
+
+      @media (max-width: 859px) {
+        body {
+          padding: 14px;
+        }
+
+        .sheet {
+          border-radius: 24px;
+        }
+
+        .hero {
+          padding: 28px 20px;
+        }
+
+        .sidebar,
+        .content {
+          padding: 24px 18px 28px;
+        }
+      }
+
+      @media print {
+        body {
+          padding: 0;
+          background: #ffffff;
+        }
+
+        .sheet {
+          width: auto;
+          border: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .hero {
+          background: #10264f;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <header class="hero">
+        <p class="hero__eyebrow">Software Developer Resume</p>
+        <div>
+          <h1 class="hero__title">Yakubu Abdulsalam Enemona</h1>
+          <p class="hero__role">Software Developer</p>
+        </div>
+        <p class="hero__summary">
+          Passionate and self-driven Software Developer with strong experience in
+          building modern web applications, dynamic user interfaces, and graphic
+          design assets. Skilled in frontend development, backend development, and
+          visual design, with a focus on performance, user experience, and scalable
+          solutions. Currently building innovative platforms and exploring advanced
+          UI/UX animations and real-world business solutions.
+        </p>
+        <div class="hero__meta">
+          <div class="hero__pill">Lagos State, Nigeria</div>
+          <div class="hero__pill">08125229560</div>
+          <div class="hero__pill">yakubuabdulsalam24434@gmail.com</div>
+        </div>
+      </header>
+
+      <section class="resume-grid">
+        <aside class="sidebar">
+          <section class="block">
+            <h2 class="label">Core Stack</h2>
+            <div class="skills-list">
+              <article class="card">
+                <strong>Frontend</strong>
+                <p class="stack">HTML5, CSS, JavaScript, React.js, Tailwind CSS, GSAP, Framer Motion</p>
+              </article>
+              <article class="card">
+                <strong>Backend</strong>
+                <p class="stack">Node.js, Express.js, Python, Supabase, Firebase</p>
+              </article>
+              <article class="card">
+                <strong>Database</strong>
+                <p class="stack">MongoDB, MySQL</p>
+              </article>
+              <article class="card">
+                <strong>Tools</strong>
+                <p class="stack">Git, GitHub, REST APIs, Responsive Design, UI/UX Design, Figma</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="block">
+            <h2 class="label">Education</h2>
+            <article class="card">
+              <strong>Aptech</strong>
+              <p class="meta">ADSE Advanced Diploma of Software Engineering</p>
+              <p class="text">2024 - 2026</p>
+            </article>
+          </section>
+
+          <section class="block">
+            <h2 class="label">Profile</h2>
+            <p class="note">
+              Frontend-leaning software developer with growing full-stack experience,
+              a strong eye for interface quality, and a clear focus on real-world
+              business products.
+            </p>
+          </section>
+        </aside>
+
+        <div class="content">
+          <section class="block">
+            <h2 class="label">Work Experience</h2>
+            <article class="entry">
+              <strong>Freelance Software Developer</strong>
+              <p class="meta">Self-employed / Remote | 2025 - Present</p>
+              <ul>
+                <li>Built and deployed responsive websites for clients across different industries.</li>
+                <li>Developed a marketplace platform with user authentication and product management.</li>
+                <li>Designed modern UI with smooth animations to improve user engagement.</li>
+                <li>Helped small businesses establish an online presence.</li>
+                <li>Optimized website performance and loading speed.</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="block">
+            <h2 class="label">Featured Projects</h2>
+            <div class="projects">
+              <article class="entry">
+                <strong>Valvora Marketplace</strong>
+                <p class="meta">React, Node.js, MongoDB</p>
+                <p class="text">
+                  Built a full marketplace platform for buying and selling products,
+                  including user authentication, product listing, and a working dashboard.
+                </p>
+              </article>
+              <article class="entry">
+                <strong>AbduTech 3D Portfolio</strong>
+                <p class="meta">HTML, CSS, JavaScript, Three.js, GSAP</p>
+                <p class="text">
+                  Designed a futuristic personal brand website with advanced animation
+                  work, immersive presentation, and strong visual identity.
+                </p>
+              </article>
+              <article class="entry">
+                <strong>Logistics Website</strong>
+                <p class="meta">React, Tailwind CSS</p>
+                <p class="text">
+                  Created a clean and professional logistics platform for service
+                  presentation, clarity, and easier customer trust.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section class="block">
+            <h2 class="label">Professional Focus</h2>
+            <p class="note">
+              Interested in modern web applications, dynamic user interfaces, smooth
+              UI motion, and scalable products that solve real business problems.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <p class="footer">
+        This resume template is optimized for mobile viewing, browser preview, and
+        print or PDF export.
+      </p>
+    </main>
+  </body>
+</html>
